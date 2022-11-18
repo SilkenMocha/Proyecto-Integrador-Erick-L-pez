@@ -3,5 +3,13 @@ import numpy as numpy
 import pandas as pd
 
 st.title ("Métodos Numéricos")
-st.subheader("Tercer Evaluacion Parcial")
-st.subheader("Erick López Saldviar — 348916")
+
+col1, col2 = st.columns(2)
+with col1:
+    st.subheader("Tercer Evaluacion Parcial")
+with col2:
+    st.subheader("Erick López Saldviar — 348916")
+
+seleccion = st.selectbox("Seleccione una opción: ", ["Método Biseccion", "Método Newton", "Método Secante", "Método Falsa Posicion", "Método Cramer"])
+
+if seleccion == "Método Biseccion": 
