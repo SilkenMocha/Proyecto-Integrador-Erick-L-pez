@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as numpy
 import pandas as pd
 #___________________________________
-#from biseccion import *
+import biseccion
 
 st.title ("Métodos Numéricos")
 
