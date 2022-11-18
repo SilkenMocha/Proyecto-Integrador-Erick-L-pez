@@ -1,26 +1,36 @@
 import math
+import streamlit as st
+import pandas as pd
+import numpy as np
 
 
 def biseccion():
-    print("_________________________________")
-    a = float(input("Valor de a: "))
-    b = float(input("Valor de b: "))
+    #print("_________________________________")
+    #a = float(input("Valor de a: "))
+    #b = float(input("Valor de b: "))
     c = 0
-    tol = float(input("Tolerancia: "))
+    #tol = float(input("Tolerancia: "))
     i = 1
-    n0 = float(input("Iteraciones: "))
+    #n0 = float(input("Iteraciones: "))
+    #print("_________________________________")
 
-    print("_________________________________")
+    with st.form(key='calc_biseccion'):
+        a = st.number_input('Valor de a: ')
+        b = st.number_input('Valor de b: ')
+        tol = st.number_input('Tolerancia: ')
+        n0 = st.number_input('Iteraciones: ')
+        calcular = st.form_submit_button('Calcular')
+    
 
-    fa = pow(a, 3) - (3 * pow(a, 2)) - (a) + 2
-    fb = pow(b, 3) - (3 * pow(b, 2)) - (b) + 2
+    fa = pow(a, 3) - (6 * pow(a, 2)) + (11*a) - 6.1
+    fb = pow(b, 3) - (6 * pow(b, 2)) + (11*b) - 6.1
     pab = fa * fb
 
     if pab < 0:
         while i < n0:
 
             x = (a + b) / 2
-            fx = pow(x, 3) - (3 * pow(x, 2)) - (x) + 2
+            fx = pow(x, 3) - (6 * pow(x, 2)) + (11 * x) - 6.1
             pax = fa * fx
 
             if pax < 0:
@@ -32,24 +42,34 @@ def biseccion():
                 e = abs(xn - x) / xn
                 x = xn
                 i = i + 1
-                print("x: " + str(xn) + " e: " + str(e) + " c: " + str(c))
+                #print("x: " + str(xn) + " e: " + str(e) + " c: " + str(c))
+
+                st.write("x: " + str(xn) + " e: " + str(e) + " c: " + str(c))
             if e < tol:
-                print("\nProcedure completed successfully\n")
+                #print("\nProcedure completed successfully\n")
+                
+                st.write("\nProcedure completed successfully\n")
                 break
 
 
 
     else:
-        print("No hay raíz")
-    print("iteraciones: " + str(c))
-    print("Raiz es igual a: " + str(xn))
-    print("Error: " + str(e))
+        #print("No hay raíz")
+        st.write ("No hay raiz")
+    
+    #print("iteraciones: " + str(c))
+    #print("Raiz es igual a: " + str(xn))
+    #print("Error: " + str(e))
+
+    st.write("iteraciones: " + str(c))
+    st.write("Raiz es igual a: " + str(xn))
+    st.write("Error: " + str(e))
 
 
-biseccion()
-print("_________________________________")
-seguir = input("Continuar? y/n: ")
-while seguir == "y":
-    biseccion()
-    print("_________________________________")
-    seguir = input("Continuar? y/n: ")
+#biseccion()
+#print("_________________________________")
+#seguir = input("Continuar? y/n: ")
+#while seguir == "y":
+    #biseccion()
+    #print("_________________________________")
+    #seguir = input("Continuar? y/n: ")
