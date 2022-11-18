@@ -12,4 +12,4 @@ with col2:
 
 seleccion = st.selectbox("Seleccione una opción: ", ["Método Biseccion", "Método Newton", "Método Secante", "Método Falsa Posicion", "Método Cramer"])
 
-if seleccion == "Método Biseccion": 
+#if seleccion == "Método Biseccion": 
