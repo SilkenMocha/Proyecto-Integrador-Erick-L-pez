@@ -44,7 +44,15 @@ def biseccion():
                 i = i + 1
                 #print("x: " + str(xn) + " e: " + str(e) + " c: " + str(c))
 
-                st.write("x: " + str(xn) + " e: " + str(e) + " c: " + str(c))
+                #list1 = [xn, e, c]
+                #list_e = ["e", e]
+                #list_c = ["c", c]
+                #for el in list1:
+                    #cols[currentCol].metric()
+                    #currentCol = (currentCol + 1) % len(cols)
+
+                #st.write("x: " + str(xn) + " e: " + str(e) + " c: " + str(c))
+
             if e < tol:
                 #print("\nProcedure completed successfully\n")
                 
