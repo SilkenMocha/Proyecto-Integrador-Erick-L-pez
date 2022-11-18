@@ -15,10 +15,10 @@ def biseccion():
     #print("_________________________________")
 
     with st.form(key='calc_biseccion'):
-        a = st.number_input('Valor de a: ')
-        b = st.number_input('Valor de b: ')
-        tol = st.number_input('Tolerancia: ')
-        n0 = st.number_input('Iteraciones: ')
+        a = st.number_input('Valor de a: ', value= -2)
+        b = st.number_input('Valor de b: ', value = 4)
+        tol = st.number_input('Tolerancia: ', value = 0.001)
+        n0 = st.number_input('Iteraciones: ', value = 100)
         calcular = st.form_submit_button('Calcular')
     
 
