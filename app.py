@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as numpy
 import pandas as pd
 #___________________________________
-import biseccion
+import biseccion as bs
 
 st.title ("Métodos Numéricos")
 
@@ -20,4 +20,4 @@ st.latex('x^3 - 6x^2 + 11x -6.1')
     #st.subheader("Método de Bisección")
     #st.latex('''x^3 - 6x^2 + 11x -6.1''')
 
-biseccion()
+bs.biseccion()
