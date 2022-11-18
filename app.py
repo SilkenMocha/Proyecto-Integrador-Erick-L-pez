@@ -20,4 +20,4 @@ st.latex('x^3 - 6x^2 + 11x -6.1')
     #st.subheader("Método de Bisección")
     #st.latex('''x^3 - 6x^2 + 11x -6.1''')
 
-    #biseccion()
+biseccion()
