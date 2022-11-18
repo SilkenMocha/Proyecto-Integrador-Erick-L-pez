@@ -26,8 +26,10 @@ def regulafalsi():
 
             if pax < 0:
                 b = x
+                fb = fx
             else:
                 a = x
+                fa = fx
 
             xn = ((a * fb) - (b * fa)) / (fb - fa)
             i = i + 1
@@ -38,11 +40,6 @@ def regulafalsi():
             if e < tol:
                 print("\nProcedure completed successfully\n")
                 break
-
-
-
-
-
 
 
     else:
