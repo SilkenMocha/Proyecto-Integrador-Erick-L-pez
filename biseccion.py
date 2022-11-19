@@ -23,6 +23,7 @@ def biseccion():
     lista_c = []
 
     xn=0
+    e = 0
     
     if pab < 0:
         while i < n0:
