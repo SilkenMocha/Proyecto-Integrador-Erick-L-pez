@@ -13,8 +13,8 @@ def regulafalsi():
         n0 = st.number_input('Iteraciones: ', value = 100)
         calcular = st.form_submit_button('Calcular')
 
-    fa = pow(a, 3) - (3 * pow(a, 2)) - (a) + 2
-    fb = pow(b, 3) - (3 * pow(b, 2)) - (b) + 2
+    fa = pow(a, 3) - (6 * pow(a, 2)) + (11*a) - 6.1
+    fb = pow(b, 3) - (6 * pow(b, 2)) + (11*b) - 6.1
     pab = fa * fb
 
     lista_a = []
@@ -29,7 +29,7 @@ def regulafalsi():
         while i < n0:
 
             x = ((a*fb)-(b*fa))/(fb-fa)
-            fx = pow(x, 3) - (3 * pow(x, 2)) - (x) + 2
+            fx = pow(x, 3) - (6 * pow(x, 2)) + (11 * x) - 6.1
             pax = fa * fx
 
             #lista_a = (a)
