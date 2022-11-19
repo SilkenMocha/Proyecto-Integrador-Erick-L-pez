@@ -3,6 +3,7 @@ import numpy as numpy
 import pandas as pd
 #___________________________________
 import biseccion as bs
+import newton as nw
 
 st.title ("Métodos Numéricos")
 
@@ -19,3 +20,8 @@ if seleccion == "Método Biseccion":
     st.subheader("Método de Bisección")
     st.latex('''x^3 - 6x^2 + 11x -6.1''')
     bs.biseccion()
+
+if seleccion == "Método Biseccion": 
+    st.subheader("Método de Newton-Raphson")
+    st.latex('''x^3 - 6x^2 + 11x -6.1''')
+    nw.newton()
