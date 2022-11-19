@@ -32,9 +32,9 @@ def regulafalsi():
             fx = pow(x, 3) - (3 * pow(x, 2)) - (x) + 2
             pax = fa * fx
 
-            lista_a = (a)
-            lista_b = (b)
-            lista_fx = (fx)
+            #lista_a = (a)
+            #lista_b = (b)
+            #lista_fx = (fx)
 
             if pax < 0:
                 b = x
@@ -45,6 +45,10 @@ def regulafalsi():
 
             xn = ((a * fb) - (b * fa)) / (fb - fa)
             e = abs(xn - x) / xn            
+
+            lista_a = (a)
+            lista_b = (b)
+            lista_fx = (fx)
 
             lista_xn.append(xn)
             lista_e.append(e)
