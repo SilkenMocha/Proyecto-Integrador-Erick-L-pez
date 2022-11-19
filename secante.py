@@ -43,7 +43,7 @@ def secante():
         x0 = x1
         x1 = xn
         fx0 = fx1
-        fx1 = pow(x0, 3) - (6 * pow(xn, 2)) + (11*xn) - 6.1
+        fx1 = pow(xn, 3) - (6 * pow(xn, 2)) + (11*xn) - 6.1
     
     d = {'X0':lista_x0, 'X1':lista_x1, 'FX0':lista_fx0, 'FX1':lista_fx1, 'Xn':lista_xn, 'e':lista_e }
     df = pd.DataFrame(data=d, index = lista_c )
