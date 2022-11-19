@@ -59,7 +59,6 @@ def regulafalsi():
     df = pd.DataFrame(data=d, index = lista_c )
     st.table(df)
 
-    st.write("iteraciones: " + str(c))
-    st.write("Raiz es igual a: " + str(xn))
-    st.write("Error: " + str(e))
-
+    st.subheader("iteraciones: " + str(c))
+    st.subheader("Raiz es igual a: " + str(xn))
+    st.subheader("Error: " + str(e))
