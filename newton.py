@@ -5,9 +5,6 @@ import numpy as np
 
 def newton():
     i=1
-    #print("_________________________________")
-    #n0 = float(input("Iteraciones: "))
-    #tol = float(input("Tolerancia: "))
     with st.form(key='calc_biseccion'):
         tol = st.number_input('Tolerancia: ', format="%.4f", step = 1e-4, value = 0.001)
         n0 = st.number_input('Iteraciones', value = 100)
@@ -27,11 +24,8 @@ def newton():
         if abs(xn-x0) <= tol:
             st.write("Procedure completed successfully")
             break
-        e = abs(xn-x0)/xn
-        
-        
-        st.write(str(i) + "  xn: " + str(xn) + "   e: " + str(e))
-
+        e = abs(xn-x0)/xn    
+    
         lista_xn.append(xn)
         lista_e.append(e)
         lista_c.append(i)
@@ -50,6 +44,5 @@ def newton():
     st.subheader("Raiz es igual a: " + str(xn))
     st.subheader("Error: " + str(e))
 
-    st.write(lista_xn)
 
 
