@@ -5,6 +5,7 @@ import pandas as pd
 import biseccion as bs
 import newton as nw
 import secante as sc
+import regulafalsi as fp
 
 st.title ("Métodos Numéricos")
 
@@ -40,4 +41,4 @@ if seleccion == "Método Secante":
 if seleccion == "Método Falsa Posicion": 
     st.subheader("Método de Falsa Posicion")
     st.latex('''x^3 - 6x^2 + 11x -6.1''')
-    regulafalsi()
+    fp.regulafalsi()
