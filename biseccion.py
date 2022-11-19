@@ -92,7 +92,9 @@ def biseccion():
         for i in lista_e:
             st.metric('e', i)
 
-    st.table(lista_xn, lista_e)
+    d = {'Xn':lista_xn, 'e':lista_e }
+    df = pd.DataFrame(data=d)
+    st.table(df)
 
             
 
