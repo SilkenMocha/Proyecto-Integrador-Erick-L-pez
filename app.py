@@ -24,8 +24,12 @@ if seleccion == "Método Biseccion":
 
 if seleccion == "Método Newton": 
     st.subheader("Método de Newton-Raphson")
-    st.latex('''x^3 - 6x^2 + 11x -6.1''')
-    st.latex('''\dfrac {\mathrm{d}}{\mathrm{d} x}= 3x^2-12x+11''')
+    col1, col2 = st.columns(2)
+    with col1:
+        st.latex('''x^3 - 6x^2 + 11x -6.1''')
+    
+    with col1:
+        st.latex('''\dfrac {\mathrm{d}}{\mathrm{d} x}= 3x^2-12x+11''')
     nw.newton()
 
 if seleccion == "Método Secante": 
