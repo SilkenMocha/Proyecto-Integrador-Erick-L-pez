@@ -40,11 +40,11 @@ def biseccion():
                 b = x
             else:
                 a = x
-                xn = (a + b) / 2
-                c = c + 1
-                e = abs(xn - x) / xn
-                x = xn
-                i = i + 1
+            xn = (a + b) / 2
+            c = c + 1
+            e = abs(xn - x) / xn
+            x = xn
+            i = i + 1
 
             lista_xn.append(xn)
             lista_e.append(e)
