@@ -62,4 +62,4 @@ def biseccion():
     st.subheader("Error: " + str(e))
 
     st.table(df)
-    st.ballons()
+    st.balloons()
