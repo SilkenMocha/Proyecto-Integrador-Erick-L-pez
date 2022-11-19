@@ -50,4 +50,8 @@ if seleccion == "Método Cramer":
         st.latex('''x + y = 1''')
     with col2:
         st.latex('''x + 5y = 10''')
-    #cr.cramer(A,b) 
+        
+    A = np.array([ [1,1], [1,5]])
+    b = np.array([1,10])
+
+    cr.cramer(A,b) 
