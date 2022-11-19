@@ -15,7 +15,6 @@ with col2:
 
 seleccion = st.selectbox("Seleccione una opción: ", ["Método Biseccion", "Método Newton", "Método Secante", "Método Falsa Posicion", "Método Cramer"])
 
-st.latex('x^3 - 6x^2 + 11x -6.1')
 if seleccion == "Método Biseccion": 
     st.subheader("Método de Bisección")
     st.latex('''x^3 - 6x^2 + 11x -6.1''')
