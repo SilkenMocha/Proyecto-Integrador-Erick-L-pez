@@ -1,4 +1,8 @@
 import math
+import streamlit as st
+import pandas as pd
+import numpy as np
+
 def secante():
     i=1
     with st.form(key='calc_secante'):
