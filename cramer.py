@@ -1,7 +1,10 @@
-impoort numpy as np
+import numpy as np
+import streamlit as st
+import pandas as pd
+import numpy as np
 
-A = np.array([ [1,1,1], [2,3,-2],[3,-2,1]])
-b = np.array([4,4,-1])
+A = np.array([ [1,1], [1,5]])
+b = np.array([1,10])
 
 
 def cramer(A,b):
@@ -16,4 +19,3 @@ def cramer(A,b):
     x[k] = Dk/D
     print ("x", k+1, "= ", x[k])
 
-cramer(A,b)
