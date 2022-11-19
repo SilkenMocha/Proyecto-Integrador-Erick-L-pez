@@ -77,8 +77,10 @@ def biseccion():
 
     cols = st.columns(2)
     currentCol = 0
+
+    length = len(list)
     
-    for i in lista_xn:
+    for i in range(length):
         cols[currentCol].metric(i)
         currentCol = (currentCol + 1) % len(cols)
 
