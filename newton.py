@@ -27,7 +27,7 @@ def newton():
         if abs(xn-x0) <= tol:
             st.write("Procedure completed successfully")
             break
-        e = (xn-x0)
+        e = abs(xn-x0)/xn
         i = i+1
         
         #print(str(i) + "  xn: " + str(xn) + "   e: " + str(e))
