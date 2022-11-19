@@ -44,7 +44,7 @@ def newton():
     df = pd.DataFrame(data=d, index = lista_c )
     st.table(df)    
     
-    e = (xn-x0)
+    e = abs(xn-x0)/xn
     st.subheader("iteraciones: " + str(i))
     st.subheader("Raiz es igual a: " + str(xn))
     st.subheader("Error: " + str(e))
