@@ -6,6 +6,7 @@ import biseccion as bs
 import newton as nw
 import secante as sc
 import regulafalsi as fp
+import cramer as cr
 
 st.title ("Métodos Numéricos")
 
@@ -42,3 +43,12 @@ if seleccion == "Método Falsa Posicion":
     st.subheader("Método de Falsa Posicion")
     st.latex('''x^3 - 6x^2 + 11x -6.1''')
     fp.regulafalsi()
+
+if seleccion == "Método Cramer": 
+    st.subheader("Método de Cramer")
+    with col1:
+        st.latex('''x + y = 1''')
+    
+    with col2:
+        st.latex('''x + 5y = 10''')
+    cramer(A,b) 
