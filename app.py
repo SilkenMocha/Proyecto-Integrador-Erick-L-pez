@@ -36,3 +36,8 @@ if seleccion == "Método Secante":
     st.subheader("Método de Secante")
     st.latex('''x^3 - 6x^2 + 11x -6.1''')
     sc.secante()
+
+if seleccion == "Método Falsa Posicion": 
+    st.subheader("Método de Falsa Posicion")
+    st.latex('''x^3 - 6x^2 + 11x -6.1''')
+    regulafalsi()
