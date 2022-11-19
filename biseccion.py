@@ -54,14 +54,12 @@ def biseccion():
     else:
         st.write ("No hay raiz")
     
-
-
-    st.write("iteraciones: " + str(c))
-    st.write("Raiz es igual a: " + str(xn))
-    st.write("Error: " + str(e))
-    st.write(lista_xn, lista_e, lista_c)
-
     d = {'Xn':lista_xn, 'e':lista_e }
     df = pd.DataFrame(data=d, index = lista_c )
-    st.table(df)
 
+    st.subheader("iteraciones: " + str(c))
+    st.subheader("Raiz es igual a: " + str(xn))
+    st.subheader("Error: " + str(e))
+
+    st.table(df)
+    st.ballons()
