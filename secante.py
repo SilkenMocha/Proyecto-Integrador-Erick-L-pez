@@ -17,6 +17,7 @@ def secante():
 
     lista_xn = []
     lista_x0 = []
+    lista_x1 = []
     lista_e = []
     lista_c = []    
 
@@ -30,6 +31,7 @@ def secante():
         
         lista_xn.append(xn)
         lista_x0.append(x0)
+        lista_x1.append(x0)
         lista_e.append(e)
         lista_c.append(i)        
         
@@ -39,7 +41,7 @@ def secante():
         fx0 = fx1
         fx1 = pow(x0, 3) - (6 * pow(xn, 2)) + (11*xn) - 6.1
     
-    d = {'X0':lista_x0, 'Xn':lista_xn, 'e':lista_e }
+    d = {'X0':lista_x0, 'X1':lista_x1, 'Xn':lista_xn, 'e':lista_e }
     df = pd.DataFrame(data=d, index = lista_c )
     st.table(df)    
 
