@@ -75,8 +75,8 @@ def biseccion():
     st.write("Error: " + str(e))
 
     st.write(lista_xn, lista_e, lista_c)
-    for i in list1:
-        cols[currentCol].metric(xn)
+    for i in lista_xn:
+        cols[currentCol].metric(i)
         currentCol = (currentCol + 1) % len(cols)
 
 
