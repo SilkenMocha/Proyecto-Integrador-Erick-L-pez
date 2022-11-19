@@ -14,7 +14,6 @@ def newton():
         x0 = st.number_input('X0', value = 3)
         calcular = st.form_submit_button('Calcular')
 
-    x0 = 1
     f0 = pow(x0, 3) - (6 * pow(x0, 2)) + (11 * x0) - 6.1
     g0 = 3*pow(x0, 2) - 12*x0 + 11
 
