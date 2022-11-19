@@ -17,7 +17,11 @@ def regulafalsi():
     fb = pow(b, 3) - (3 * pow(b, 2)) - (b) + 2
     pab = fa * fb
 
+    lista_a = []
+    lista_b = []
     lista_xn = []
+    lista_fx = []
+    
     lista_e = []
     lista_c = []
 
@@ -27,6 +31,10 @@ def regulafalsi():
             x = ((a*fb)-(b*fa))/(fb-fa)
             fx = pow(x, 3) - (3 * pow(x, 2)) - (x) + 2
             pax = fa * fx
+
+            lista_a = (a)
+            lista_b = (b)
+            lista_fx = (fx)
 
             if pax < 0:
                 b = x
@@ -40,7 +48,8 @@ def regulafalsi():
 
             lista_xn.append(xn)
             lista_e.append(e)
-            lista_c.append(i)            
+            lista_c.append(i)
+                        
             
             i = i + 1
             c = c + 1
@@ -55,7 +64,7 @@ def regulafalsi():
     else:
         print("No hay raíz")
 
-    d = {'Xn':lista_xn, 'e':lista_e }
+    d = {'a':lista_a, 'b':lista_b, 'Xn':lista_xn,'fx':lista_fx, 'e':lista_e }
     df = pd.DataFrame(data=d, index = lista_c )
     st.table(df)
 
