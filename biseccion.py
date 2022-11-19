@@ -33,13 +33,13 @@ def biseccion():
                 b = x
             else:
                 a = x
-                xnw = (a + b) / 2
+                xn = (a + b) / 2
                 c = c + 1
-                e = abs(xnw - x) / xnw
-                x = xnw
+                e = abs(xn - x) / xn
+                x = xn
                 i = i + 1
 
-            lista_xnw.append(xnw)
+            lista_xn.append(xn)
             lista_e.append(e)
             lista_c.append(c)
 
@@ -53,12 +53,12 @@ def biseccion():
     else:
         st.write ("No hay raiz")
     
-    d = {'Xn':lista_xnw, 'e':lista_e }
+    d = {'Xn':lista_xn, 'e':lista_e }
     df = pd.DataFrame(data=d, index = lista_c )
     st.table(df)
 
     st.subheader("iteraciones: " + str(c))
-    st.subheader("Raiz es igual a: " + str(xnw))
+    st.subheader("Raiz es igual a: " + str(xn))
     st.subheader("Error: " + str(e))
 
    
