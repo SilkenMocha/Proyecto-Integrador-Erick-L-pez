@@ -92,7 +92,7 @@ def biseccion():
         for i in lista_e:
             st.metric('e', i)
 
-    st.table(lista_xn)
+    st.table(lista_xn, lista_e)
 
             
 
