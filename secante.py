@@ -31,7 +31,7 @@ def secante():
         
         lista_xn.append(xn)
         lista_x0.append(x0)
-        lista_x1.append(x0)
+        lista_x1.append(x1)
         lista_e.append(e)
         lista_c.append(i)        
         
