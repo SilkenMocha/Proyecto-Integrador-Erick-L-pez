@@ -8,8 +8,8 @@ def biseccion():
     c = 0
     i = 1
     with st.form(key='calc_biseccion'):
-        a = st.number_input('Valor de a: ', value= -2)
-        b = st.number_input('Valor de b: ', value = 4)
+        a = st.number_input('Valor de a: ', value= 3)
+        b = st.number_input('Valor de b: ', value = 3.5)
         tol = st.number_input('Tolerancia: ', format="%.4f", step = 1e-4, value = 0.001 )
         n0 = st.number_input('Iteraciones: ', value = 100)
         calcular = st.form_submit_button('Calcular')
