@@ -34,7 +34,7 @@ def newton():
 
         lista_xn.append(xn)
         lista_e.append(e)
-        lista_c.append(c)
+        lista_c.append(i)
 
         x0 = xn
         f0 = pow(x0, 3) - (6 * pow(x0, 2)) + (11 * x0) - 6.1
