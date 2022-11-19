@@ -75,7 +75,7 @@ def biseccion():
     st.write("Error: " + str(e))
     st.write(lista_xn, lista_e, lista_c)
 
-    cols = st.columns(2)
+    cols = st.columns(3)
     currentCol = 0
 
     #length = len(lista_xn)
