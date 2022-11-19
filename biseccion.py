@@ -43,7 +43,7 @@ def biseccion():
                 x = xn
                 i = i + 1
                 #print("x: " + str(xn) + " e: " + str(e) + " c: " + str(c))
-                list1.append((x, e, c))
+                list1.append((xn, e, c))
                 #list1 = [xn, e, c]
                 #list_e = ["e", e]
                 #list_c = ["c", c]
