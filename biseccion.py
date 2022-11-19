@@ -86,11 +86,13 @@ def biseccion():
     with col1:
         for i in lista_xn:
             c = c+1
-            st.metric('xn' + str(c), i)
+            st.metric('xn ' + str(c), i)
 
     with col2:
         for i in lista_e:
             st.metric('e', i)
+
+    st.table(lista_xn)
 
             
 
