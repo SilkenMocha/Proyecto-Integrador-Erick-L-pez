@@ -28,7 +28,7 @@ if seleccion == "Método Newton":
     with col1:
         st.latex('''x^3 - 6x^2 + 11x -6.1''')
     
-    with col1:
+    with col2:
         st.latex('''\dfrac {\mathrm{d}}{\mathrm{d} x}= 3x^2-12x+11''')
     nw.newton()
 
