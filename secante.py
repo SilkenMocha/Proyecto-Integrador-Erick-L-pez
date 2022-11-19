@@ -20,7 +20,8 @@ def secante():
     lista_c = []    
 
     while i<n0:
-        xn= x1 - ((fx1*(x1-x0)) / (fx1 - fx0))
+        #xn= x1 - ((fx1*(x1-x0)) / (fx1 - fx0))
+        xn=x1-(x1-x0)*fx1/(fx1-fx0)
         if abs(xn-x1)/xn < tol:
             print("Procedure completed successfully")
             break
