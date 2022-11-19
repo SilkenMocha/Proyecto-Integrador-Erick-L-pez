@@ -28,7 +28,7 @@ def newton():
             st.write("Procedure completed successfully")
             break
         e = abs(xn-x0)/xn
-        i = i+1
+        
         
         st.write(str(i) + "  xn: " + str(xn) + "   e: " + str(e))
 
@@ -39,6 +39,7 @@ def newton():
         x0 = xn
         f0 = pow(x0, 3) - (6 * pow(x0, 2)) + (11 * x0) - 6.1
         g0 = 3*pow(x0, 2) - 12*x0 + 11
+        i = i+1
 
     d = {'Xn':lista_xn, 'e':lista_e }
     df = pd.DataFrame(data=d, index = lista_c )
