@@ -1,7 +1,7 @@
 import math
 def secante():
     i=1
-    with st.form(key='calc_biseccion'):
+    with st.form(key='calc_secante'):
         x0 = st.number_input('Valor de a: ', value= 3)
         x1 = st.number_input('Valor de b: ', value = 3.5)
         tol = st.number_input('Tolerancia: ', format="%.4f", step = 1e-4, value = 0.001 )
