@@ -73,8 +73,11 @@ def biseccion():
     st.write("iteraciones: " + str(c))
     st.write("Raiz es igual a: " + str(xn))
     st.write("Error: " + str(e))
-
     st.write(lista_xn, lista_e, lista_c)
+
+    cols = st.columns(2)
+    currentCol = 0
+    
     for i in lista_xn:
         cols[currentCol].metric(i)
         currentCol = (currentCol + 1) % len(cols)
