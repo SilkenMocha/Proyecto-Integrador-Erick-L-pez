@@ -50,4 +50,6 @@ def newton():
     st.subheader("Raiz es igual a: " + str(xn))
     st.subheader("Error: " + str(e))
 
+    st.write(lista_xn)
+
 
