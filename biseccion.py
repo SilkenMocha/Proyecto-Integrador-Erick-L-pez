@@ -80,11 +80,13 @@ def biseccion():
     #for i in lista_xn:
         #cols[currentCol].metric('xn'+, i)
         #currentCol = (currentCol + 1) % len(cols)
-
+    
     col1, col2 = st.columns(2)
+    c = 1
     with col1:
         for i in lista_xn:
-            st.metric('xn'+ str(enumerate(lista_xn)), i)
+            c = str(c+1)
+            st.metric('xn' + c, i)
 
     with col2:
         for i in lista_e:
