@@ -25,7 +25,11 @@ def biseccion():
     fa = pow(a, 3) - (6 * pow(a, 2)) + (11*a) - 6.1
     fb = pow(b, 3) - (6 * pow(b, 2)) + (11*b) - 6.1
     pab = fa * fb
-
+    
+    lista_xn = []
+    lista_e = []
+    lista_c = []
+    
     if pab < 0:
         while i < n0:
 
@@ -44,8 +48,11 @@ def biseccion():
                 i = i + 1
                 #print("x: " + str(xn) + " e: " + str(e) + " c: " + str(c))
                 #lista = ['x, e, c']
-            lista = []
-            lista.append(xn, e, c)
+
+            lista_xn.append(xn)
+            lista_e.append(e)
+            lista_c.append(c)
+
                 #list1 = [xn, e, c]
                 #list_e = ["e", e]
                 #list_c = ["c", c]
@@ -75,7 +82,7 @@ def biseccion():
     st.write("Raiz es igual a: " + str(xn))
     st.write("Error: " + str(e))
 
-    st.write(lista)
+    st.write(lista_xn, lista_e, lista_c)
 
 
 #biseccion()
