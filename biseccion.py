@@ -18,7 +18,7 @@ def biseccion():
     fb = pow(b, 3) - (6 * pow(b, 2)) + (11*b) - 6.1
     pab = fa * fb
     
-    lista_xnw = []
+    lista_xn = []
     lista_e = []
     lista_c = []
     
