@@ -84,7 +84,7 @@ def biseccion():
     col1, col2 = st.columns(2)
     with col1:
         for i in lista_xn:
-            st.metric('c', i)
+            st.metric('xn'+ str(enumerate(lista_xn)), i)
 
     with col2:
         for i in lista_e:
