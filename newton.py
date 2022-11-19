@@ -30,7 +30,7 @@ def newton():
         e = abs(xn-x0)/xn
         i = i+1
         
-        #print(str(i) + "  xn: " + str(xn) + "   e: " + str(e))
+        st.write(str(i) + "  xn: " + str(xn) + "   e: " + str(e))
 
         lista_xn.append(xn)
         lista_e.append(e)
