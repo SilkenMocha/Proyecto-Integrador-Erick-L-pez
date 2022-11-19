@@ -1,27 +1,31 @@
-
 import math
-def regulafalsi():
-    print("_________________________________")
-    a = float(input("Valor de a: "))
-    b = float(input("Valor de b: "))
-    c = 0
-    tol = float(input("Tolerancia: "))
-    i = 1
-    n0 = float(input("Iteraciones: "))
+import streamlit as st
+import pandas as pd
+import numpy as np
 
-    print("_________________________________")
+def regulafalsi():
+    c = 0
+    i = 1
+    with st.form(key='calc_regulafalsi'):
+        a = st.number_input('Valor de a: ', value= 3)
+        b = st.number_input('Valor de b: ', value = 3.5)
+        tol = st.number_input('Tolerancia: ', format="%.4f", step = 1e-4, value = 0.001 )
+        n0 = st.number_input('Iteraciones: ', value = 100)
+        calcular = st.form_submit_button('Calcular')
 
     fa = pow(a, 3) - (3 * pow(a, 2)) - (a) + 2
     fb = pow(b, 3) - (3 * pow(b, 2)) - (b) + 2
     pab = fa * fb
 
+    lista_xn = []
+    lista_e = []
+    lista_c = []
+
     if pab < 0:
         while i < n0:
-            #x1=(XL*fXR - XR*fXL) / (fXR - fXL)
+
             x = ((a*fb)-(b*fa))/(fb-fa)
             fx = pow(x, 3) - (3 * pow(x, 2)) - (x) + 2
-
-
             pax = fa * fx
 
             if pax < 0:
@@ -32,9 +36,15 @@ def regulafalsi():
                 fa = fx
 
             xn = ((a * fb) - (b * fa)) / (fb - fa)
+            e = abs(xn - x) / xn            
+
+            lista_xn.append(xn)
+            lista_e.append(e)
+            lista_c.append(i)            
+            
             i = i + 1
             c = c + 1
-            e = abs(xn - x) / xn
+
             print("x: " + str(xn) + " e: " + str(e) + " c: " + str(c))
 
             if e < tol:
@@ -44,15 +54,12 @@ def regulafalsi():
 
     else:
         print("No hay raíz")
-    print("iteraciones: " + str(c))
-    print("Raiz es igual a: " + str(xn))
-    print("Error: " + str(e))
 
+    d = {'Xn':lista_xn, 'e':lista_e }
+    df = pd.DataFrame(data=d, index = lista_c )
+    st.table(df)
 
-regulafalsi()
-print("_________________________________")
-seguir = input("Continuar? y/n: ")
-while seguir == "y":
-    regulafalsi()
-    print("_________________________________")
-    seguir = input("Continuar? y/n: ")
+    st.write("iteraciones: " + str(c))
+    st.write("Raiz es igual a: " + str(xn))
+    st.write("Error: " + str(e))
+
