@@ -14,12 +14,11 @@ def biseccion():
         n0 = st.number_input('Iteraciones: ', value = 100)
         calcular = st.form_submit_button('Calcular')
     
-
     fa = pow(a, 3) - (6 * pow(a, 2)) + (11*a) - 6.1
     fb = pow(b, 3) - (6 * pow(b, 2)) + (11*b) - 6.1
     pab = fa * fb
     
-    lista_xn = []
+    lista_xnw = []
     lista_e = []
     lista_c = []
     
@@ -34,13 +33,13 @@ def biseccion():
                 b = x
             else:
                 a = x
-                xn = (a + b) / 2
+                xnw = (a + b) / 2
                 c = c + 1
-                e = abs(xn - x) / xn
-                x = xn
+                e = abs(xnw - x) / xnw
+                x = xnw
                 i = i + 1
 
-            lista_xn.append(xn)
+            lista_xnw.append(xnw)
             lista_e.append(e)
             lista_c.append(c)
 
@@ -54,11 +53,12 @@ def biseccion():
     else:
         st.write ("No hay raiz")
     
-    d = {'Xn':lista_xn, 'e':lista_e }
+    d = {'Xn':lista_xnw, 'e':lista_e }
     df = pd.DataFrame(data=d, index = lista_c )
     st.table(df)
+
     st.subheader("iteraciones: " + str(c))
-    st.subheader("Raiz es igual a: " + str(xn))
+    st.subheader("Raiz es igual a: " + str(xnw))
     st.subheader("Error: " + str(e))
 
    
