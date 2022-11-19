@@ -60,6 +60,3 @@ def biseccion():
     st.subheader("iteraciones: " + str(c))
     st.subheader("Raiz es igual a: " + str(xn))
     st.subheader("Error: " + str(e))
-
-   
-    st.balloons()
