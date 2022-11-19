@@ -52,7 +52,7 @@ def biseccion():
                     #cols[currentCol].metric()
                     #currentCol = (currentCol + 1) % len(cols)
 
-                st.write("x: " + str(xn) + " e: " + str(e) + " c: " + str(c))
+            st.write("x: " + str(xn) + " e: " + str(e) + " c: " + str(c))
 
             if e < tol:
                 #print("\nProcedure completed successfully\n")
