@@ -32,7 +32,7 @@ def biseccion():
             x = (a + b) / 2
             fx = pow(x, 3) - (6 * pow(x, 2)) + (11 * x) - 6.1
             pax = fa * fx
-            lista = [x]
+            
             if pax < 0:
                 b = x
             else:
@@ -44,7 +44,8 @@ def biseccion():
                 i = i + 1
                 #print("x: " + str(xn) + " e: " + str(e) + " c: " + str(c))
                 #lista = ['x, e, c']
-                lista.append((xn, e, c))
+            lista = ['x', 'e', 'c']
+            lista.append((xn, e, c))
                 #list1 = [xn, e, c]
                 #list_e = ["e", e]
                 #list_c = ["c", c]
