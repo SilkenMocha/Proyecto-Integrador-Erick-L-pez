@@ -30,7 +30,7 @@ def biseccion():
     e = 0
     
     if pab < 0:
-        while i > n0:
+        while i < n0:
 
             x = (a + b) / 2
             fx = pow(x, 3) - (6 * pow(x, 2)) + (11 * x) - 6.1
