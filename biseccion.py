@@ -21,6 +21,8 @@ def biseccion():
     lista_xn = []
     lista_e = []
     lista_c = []
+
+    xn=0
     
     if pab < 0:
         while i < n0:
