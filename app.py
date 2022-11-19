@@ -51,4 +51,4 @@ if seleccion == "Método Cramer":
     
     with col2:
         st.latex('''x + 5y = 10''')
-    cramer(A,b) 
+    cr.cramer(A,b) 
