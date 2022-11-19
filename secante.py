@@ -41,7 +41,7 @@ def secante():
     st.table(df)    
 
     e = (xn - x1) / xn
-    st.write("iteraciones: " + str(i))
-    st.write("Raiz es igual a: " + str(xn))
-    st.write("Error: " + str(e))
+    st.subheader("iteraciones: " + str(i))
+    st.subheader("Raiz es igual a: " + str(xn))
+    st.subheader("Error: " + str(e))
 
