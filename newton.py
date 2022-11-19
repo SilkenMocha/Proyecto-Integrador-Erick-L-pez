@@ -11,7 +11,7 @@ def newton():
     with st.form(key='calc_biseccion'):
         tol = st.number_input('Tolerancia: ', format="%.4f", step = 1e-4, value = 0.001)
         n0 = st.number_input('Iteraciones', value = 100)
-        x0 = st.number_input('X0', value = 1)
+        x0 = st.number_input('X0', value = 3)
         calcular = st.form_submit_button('Calcular')
 
     x0 = 1
