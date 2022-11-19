@@ -56,10 +56,10 @@ def biseccion():
     
     d = {'Xn':lista_xn, 'e':lista_e }
     df = pd.DataFrame(data=d, index = lista_c )
-
+    st.table(df)
     st.subheader("iteraciones: " + str(c))
     st.subheader("Raiz es igual a: " + str(xn))
     st.subheader("Error: " + str(e))
 
-    st.table(df)
+   
     st.balloons()
