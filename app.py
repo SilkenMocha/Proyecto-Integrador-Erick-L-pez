@@ -6,7 +6,7 @@ import biseccion as bs
 import newton as nw
 import secante as sc
 import regulafalsi as fp
-#import cramer as cr
+import cramer as cr
 
 st.title ("Métodos Numéricos")
 
