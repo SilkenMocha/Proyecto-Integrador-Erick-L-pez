@@ -47,18 +47,10 @@ def biseccion():
                 x = xn
                 i = i + 1
                 #print("x: " + str(xn) + " e: " + str(e) + " c: " + str(c))
-                #lista = ['x, e, c']
 
             lista_xn.append(xn)
             lista_e.append(e)
             lista_c.append(c)
-
-                #list1 = [xn, e, c]
-                #list_e = ["e", e]
-                #list_c = ["c", c]
-                #for el in list1:
-                    #cols[currentCol].metric()
-                    #currentCol = (currentCol + 1) % len(cols)
 
             st.write("x: " + str(xn) + " e: " + str(e) + " c: " + str(c))
 
@@ -83,6 +75,9 @@ def biseccion():
     st.write("Error: " + str(e))
 
     st.write(lista_xn, lista_e, lista_c)
+    for el in list1:
+        cols[currentCol].metric(lista_xn)
+        currentCol = (currentCol + 1) % len(cols)
 
 
 #biseccion()
