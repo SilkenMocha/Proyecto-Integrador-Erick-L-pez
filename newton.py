@@ -14,15 +14,9 @@ def newton():
     f0 = pow(x0, 3) - (6 * pow(x0, 2)) + (11 * x0) - 6.1
     g0 = 3*pow(x0, 2) - 12*x0 + 11
 
-    st.write(f0)
-    st.write(g0)
-
     lista_xn = []
     lista_e = []
     lista_c = []    
-
-    lista_f0 = []
-    lista_g0 = []
 
     while i < n0:
         xn = x0 - (f0/g0)
@@ -35,15 +29,14 @@ def newton():
         lista_xn.append(xn)
         lista_e.append(e)
         lista_c.append(i)
-        lista_f0.append(f0)
-        lista_g0.append(g0)
+
 
         x0 = xn
         f0 = pow(x0, 3) - (6 * pow(x0, 2)) + (11 * x0) - 6.1
         g0 = 3*pow(x0, 2) - 12*x0 + 11
         i = i+1
 
-    d = {'Xn':lista_xn,'f0':lista_f0,'g0':lista_g0, 'e':lista_e }
+    d = {'Xn':lista_xn, 'e':lista_e }
     df = pd.DataFrame(data=d, index = lista_c )
     st.table(df)    
     
