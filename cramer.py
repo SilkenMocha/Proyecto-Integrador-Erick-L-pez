@@ -18,6 +18,14 @@ def cramer(A,b):
     lista_x.append(x[k])
     st.subheader("x" + str(k+1) + "= "+ str(x[k]))
     st.metric("X" + str(k+1) , x[k])
+  
+  #cols = st.columns(3)
+  #currentCol = 0    
+  #for i in lista_x:
+    #cols[currentCol].metric('x', i)
+    #currentCol = (currentCol + 1) % len(cols)  
+  
+  #st.write(lista_x)
 
   
 
