@@ -1,5 +1,5 @@
 import streamlit as st
-import numpy as numpy
+import numpy as np
 import pandas as pd
 #___________________________________
 import biseccion as bs
