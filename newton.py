@@ -14,6 +14,9 @@ def newton():
     f0 = pow(x0, 3) - (6 * pow(x0, 2)) + (11 * x0) - 6.1
     g0 = 3*pow(x0, 2) - 12*x0 + 11
 
+    st.write(f0)
+    st.write(g0)
+
     lista_xn = []
     lista_e = []
     lista_c = []    
