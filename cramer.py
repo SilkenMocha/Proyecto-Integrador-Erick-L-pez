@@ -7,8 +7,6 @@ def cramer(A,b):
   n = len(b)
   D = np.linalg.det(A)
   x = np.zeros(n)
-  A
-  b
 
   for k in range(n):
     Ak = A.copy()
@@ -18,6 +16,7 @@ def cramer(A,b):
 
     
     st.subheader("x" + str(k+1) + "= "+ str(x[k]))
+    st.metric("x", x[k])
 
   
 
