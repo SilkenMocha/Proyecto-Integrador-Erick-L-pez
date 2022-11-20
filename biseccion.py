@@ -25,7 +25,7 @@ def biseccion():
     lista_fx = []
     lista_a = []
     lista_b = []
-    lista_pax
+    lista_pax = []
 
     xn=0
     e = 0
