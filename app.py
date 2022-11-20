@@ -7,6 +7,7 @@ import newton as nw
 import secante as sc
 import regulafalsi as fp
 import cramer as cr
+from PIL import Image
 
 st.title ("Métodos Numéricos")
 
@@ -54,4 +55,7 @@ if seleccion == "Método Cramer":
     A = np.array([ [1,1], [1,5]])
     b = np.array([1,10])
 
-    cr.cramer(A,b) 
+    cr.cramer(A,b)
+    
+    image = Image.open('ratoncito.jfif')
+    st.image(image, caption = "Gracias por su atención"
