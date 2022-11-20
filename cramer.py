@@ -24,7 +24,7 @@ def cramer(A,b):
   currentCol = 0
   lenght = len(lista_x)
 
-  st.write("Numero de soluciones: ", str(lenght))    
+  st.subheader.caption("Numero de soluciones: ", str(lenght))    
 
   for i in lista_x:
     cols[currentCol].metric('Xn', i)
