@@ -58,4 +58,4 @@ if seleccion == "Método Cramer":
     cr.cramer(A,b)
     
     image = Image.open('ratoncito.jfif')
-    st.image(image, caption = "Gracias por su atención"
+    st.image(image, caption = "Gracias por su atención")
