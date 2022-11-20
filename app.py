@@ -53,7 +53,7 @@ if seleccion == "Método Cramer":
         st.latex('''x + y = 1''')
     with col2:
         st.latex('''x + 5y = 10''')
-    st.latex('''\begin{array}{rr|r}-1 & 2 &  3 \\3 & 4 & -7 &   2\\6 & 5 & 90 & -11\end{array}''')
+    st.latex('''\begin{array}{rr|r}-1 & 2 &  3 \\3 & 4 & -7\\6 & 5 & 90\end{array}''')
     A = np.array([ [1,1], [1,5]])
     b = np.array([1,10])
 
