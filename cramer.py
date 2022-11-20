@@ -16,12 +16,15 @@ def cramer(A,b):
     x[k] = Dk/D
 
     lista_x.append(round(x[k], 5))
+    st.subheader("x" + str(k+1) + "= "+ str(x[k]))
+    st.metric("X" + str(k+1) , x[k])
   
   cols = st.columns(3)
   currentCol = 0    
   for i in lista_x:
-    cols[currentCol].metric('x', i)
+    cols[currentCol].metric('x' + str(k+1) , i)
     currentCol = (currentCol + 1) % len(cols)  
+
 
   
 
