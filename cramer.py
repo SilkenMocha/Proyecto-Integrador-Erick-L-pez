@@ -17,7 +17,7 @@ def cramer(A,b):
     x[k] = Dk/D
 
     
-    st.write ("x", str(k+1), "= ", str(x[k]))
+    st.subheader ("x", str(k+1), "= ", str(x[k]))
 
   
 
