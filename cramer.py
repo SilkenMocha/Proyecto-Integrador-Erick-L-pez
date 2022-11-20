@@ -19,7 +19,7 @@ def cramer(A,b):
 
     st.write ("x" + str(k+1), "= ", x[k])
     
-    st.metric("X"+str(k), x[k])
+    #st.metric("X"+str(k), x[k])
 
   #cols = st.columns(3)
   #currentCol = 0    
