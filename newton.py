@@ -40,7 +40,7 @@ def newton():
         g0 = 3*pow(x0, 2) - 12*x0 + 11
         i = i+1
 
-    d = {'Xn':lista_xn, 'e':lista_e }
+    d = {'Xn':lista_xn,'f0':lista_f0,'g0':lista_g0, 'e':lista_e }
     df = pd.DataFrame(data=d, index = lista_c )
     st.table(df)    
     
