@@ -16,7 +16,7 @@ def cramer(A,b):
 
     
     st.subheader("x" + str(k+1) + "= "+ str(x[k]))
-    st.metric("x", x[k])
+    st.metric("x" + str(k+1) , x[k])
 
   
 
