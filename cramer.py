@@ -14,6 +14,8 @@ def cramer(A,b):
     Ak[:,k] = b
     Dk = np.linalg.det(Ak)
     x[k] = Dk/D
+
+    lista_x.append(round(x[k], 5))
   
   cols = st.columns(3)
   currentCol = 0    
