@@ -51,8 +51,6 @@ def biseccion():
                 st.write("\nProcedure completed successfully\n")
                 break
 
-
-
     else:
         st.write ("No hay raiz")
     
