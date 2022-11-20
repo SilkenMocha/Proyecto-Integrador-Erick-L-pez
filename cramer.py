@@ -18,6 +18,8 @@ def cramer(A,b):
     lista_x.append(x[k])
     st.subheader("x" + str(k+1) + "= "+ str(x[k]))
     st.metric("X" + str(k+1) , x[k])
+  
+  st.write(lista_x)
 
   
 
