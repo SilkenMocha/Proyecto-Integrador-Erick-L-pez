@@ -16,8 +16,8 @@ def cramer(A,b):
     Dk = np.linalg.det(Ak)
     x[k] = Dk/D
 
-    k
-    st.write ("x", k, "= ", str(x[k]))
+    
+    st.write ("x", str(k+1), "= ", str(x[k]))
 
   
 
