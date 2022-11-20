@@ -19,6 +19,7 @@ def cramer(A,b):
   
   cols = st.columns(3)
   currentCol = 0    
+  k = 1
   for i in lista_x:
     cols[currentCol].metric('X' + str(k+1) , i)
     currentCol = (currentCol + 1) % len(cols)  
