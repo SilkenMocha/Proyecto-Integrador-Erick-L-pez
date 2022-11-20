@@ -12,7 +12,7 @@ from PIL import Image
 st.title ("Métodos Numéricos")
 #col1, col2, col3 = st.columns(3)
 image = Image.open('metodos.jpg')
-image(image)
+st.image(image)
 
 col1, col2 = st.columns(2)
 with col1:
