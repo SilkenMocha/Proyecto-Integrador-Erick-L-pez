@@ -15,7 +15,7 @@ def cramer(A,b):
     Dk = np.linalg.det(Ak)
     x[k] = Dk/D
 
-    lista_x.append(x[k])
+    lista_x.append(round(x[k], 5))
     st.subheader("x" + str(k+1) + "= "+ str(x[k]))
     st.metric("X" + str(k+1) , x[k])
   
