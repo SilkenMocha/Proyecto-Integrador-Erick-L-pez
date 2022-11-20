@@ -10,11 +10,22 @@ def cramer(A,b):
   A
   b
 
+  lista_x = []
   for k in range(n):
     Ak = A.copy()
     Ak[:,k] = b
     Dk = np.linalg.det(Ak)
     x[k] = Dk/D
+    k=k+1
+    lista_x.append(x[k])
     st.write ("x", k+1, "= ", x[k])
+    
+    st.metric("X"+str(k), x[k])
+
+  cols = st.columns(3)
+  currentCol = 0    
+  for i in lista_xn:
+    cols[currentCol].metric('xn'+, i)
+    currentCol = (currentCol + 1) % len(cols)
   
 
