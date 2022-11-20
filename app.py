@@ -10,7 +10,7 @@ import cramer as cr
 from PIL import Image
 
 st.title ("Métodos Numéricos")
-col1, col2, col3 = st.columns(4)
+col1, col2, col3, col4 = st.columns(4)
 image = Image.open('metodos.jpg')
 col2.image(image, width = 400)
 
