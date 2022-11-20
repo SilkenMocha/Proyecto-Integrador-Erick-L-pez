@@ -17,7 +17,7 @@ def cramer(A,b):
     x[k] = Dk/D
     k=k+1
 
-    st.write ("x", k+1, "= ", x[k])
+    st.write ("x" + k+1, "= ", x[k])
     
     st.metric("X"+str(k), x[k])
 
