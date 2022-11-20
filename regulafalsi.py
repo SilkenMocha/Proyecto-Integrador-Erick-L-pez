@@ -20,6 +20,8 @@ def regulafalsi():
     lista_xn = []  
     lista_e = []
     lista_c = []
+    lista_a = []
+    lista_b = []
 
     if pab < 0:
         while i < n0:
@@ -42,7 +44,9 @@ def regulafalsi():
 
             lista_xn.append(xn)
             lista_e.append(e)
-            lista_c.append(i)            
+            lista_c.append(i)
+            lista_a.append(a)
+            lista_b.append(b)            
 
             if e < tol:
                 print("\nProcedure completed successfully\n")
@@ -52,7 +56,7 @@ def regulafalsi():
     else:
         print("No hay raíz")
 
-    d = {'Xn':lista_xn, 'e':lista_e }
+    d = {'a':lista_a, 'b':lista_b, 'Xn':lista_xn, 'e':lista_e }
     df = pd.DataFrame(data=d, index = lista_c )
     st.table(df)
 
