@@ -21,9 +21,9 @@ def cramer(A,b):
   
   cols = st.columns(3)
   currentCol = 0    
-    for i in lista_x:
-      cols[currentCol].metric('x'+, i)
-      currentCol = (currentCol + 1) % len(cols)  
+  for i in lista_x:
+    cols[currentCol].metric('x'+, i)
+    currentCol = (currentCol + 1) % len(cols)  
   
   st.write(lista_x)
 
