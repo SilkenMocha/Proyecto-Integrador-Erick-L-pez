@@ -25,7 +25,7 @@ def cramer(A,b):
     cols[currentCol].metric('x', i)
     currentCol = (currentCol + 1) % len(cols)  
   
-  st.write(lista_x)
+  #st.write(lista_x)
 
   
 
