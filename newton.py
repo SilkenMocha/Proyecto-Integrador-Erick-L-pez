@@ -18,6 +18,9 @@ def newton():
     lista_e = []
     lista_c = []    
 
+    lista_f0 = []
+    lista_g0 = []
+
     while i < n0:
         xn = x0 - (f0/g0)
 
@@ -29,6 +32,8 @@ def newton():
         lista_xn.append(xn)
         lista_e.append(e)
         lista_c.append(i)
+        lista_f0.append(f0)
+        lista_g0.append(g0)
 
         x0 = xn
         f0 = pow(x0, 3) - (6 * pow(x0, 2)) + (11 * x0) - 6.1
