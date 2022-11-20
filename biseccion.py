@@ -21,11 +21,9 @@ def biseccion():
     lista_xn = []
     lista_e = []
     lista_c = []
-
-    lista_fx = []
     lista_a = []
     lista_b = []
-    lista_pax = []
+ 
 
     xn=0
     e = 0
@@ -50,11 +48,9 @@ def biseccion():
             lista_xn.append(xn)
             lista_e.append(e)
             lista_c.append(c)
-            
             lista_a.append(a)
             lista_b.append(b)
-            lista_fx.append(fx)
-            lista_pax.append(pax)
+
 
             if e < tol:
                
@@ -64,7 +60,7 @@ def biseccion():
     else:
         st.write ("No hay raiz")
     
-    d = {'a':lista_a, 'b':lista_b, 'fx':lista_fx,'pax':lista_pax, 'Xn':lista_xn, 'e':lista_e }
+    d = {'a':lista_a, 'b':lista_b, 'Xn':lista_xn, 'e':lista_e }
     df = pd.DataFrame(data=d, index = lista_c )
     st.table(df)
 
