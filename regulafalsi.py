@@ -44,7 +44,7 @@ def regulafalsi():
 
             lista_xn.append(xn)
             lista_e.append(e)
-            lista_c.append(i)
+            lista_c.append(c)
             lista_a.append(a)
             lista_b.append(b)            
 
